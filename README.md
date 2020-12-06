@@ -13,6 +13,13 @@ Features:
     * Spigot 1.16.4-R0.1-SNAPSHOT (compile with Java 14 on MacOS) when testing plugin locally.
     * Paper 1.16.4 (compiled with Java 8) running on a paid hosting service using an older version of Java.
 
+## Steps for using this template for your own projects
+
+- [ ] Read about [Spigot plugin development](https://www.spigotmc.org/wiki/spigot-plugin-development/) (recommended).
+- [ ] Create a new package (instead of `com.briangershon.demo`) and matching folder structure. Move `App.java` in there. Add your plugin logic.
+- [ ] Update `plugin.yml` and populate with the meta data for your plugin.
+- [ ] Update `pom.xml` top section to match your plugin as well as `<dependency>` section if you're using a different Spigot version.
+
 ## To compile
 
 Setup dependencies for your environment. Refer to [Creating a blank Spigot plugin, using Maven](https://www.spigotmc.org/wiki/creating-a-plugin-with-maven-using-intellij-idea/).
