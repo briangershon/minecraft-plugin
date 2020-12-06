@@ -1,0 +1,5 @@
+name: PluginDemo
+main: com.briangershon.demo.App
+description: Plugin Demo
+version: ${project.version}
+api-version: 1.13
