@@ -30,7 +30,7 @@ Prior to compiling, update the version of your plugin if needed in `pom.xml`.
 
 Compile:
 
-    maven clean package
+    mvn clean package
 
 ## To install on your Spigot compatable Minecraft Server
 
