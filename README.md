@@ -20,45 +20,13 @@ Features:
 - [ ] Update `plugin.yml` and populate with the meta data for your plugin.
 - [ ] Update `pom.xml` top section to match your plugin as well as `<dependency>` section if you're using a different Spigot version.
 
-## Sample Development Environment Setup and Workflow
+## Development Environment Setup and Workflow
 
-### Setup
-
-Setup dependencies for your environment. Refer to [Creating a blank Spigot plugin, using Maven](https://www.spigotmc.org/wiki/creating-a-plugin-with-maven-using-intellij-idea/).
-
-For MacOS, Java 14 was installed and then Maven installed via Home Brew (`brew install maven`).
-
-### Run a local Minecraft server
-
-Spigot is installed into `~/spigotmc`.
-
-In one terminal, I run Spigot via my `run.sh` script:
-
-```bash
-#/bin/sh
-java -Xms2G -Xmx2G -jar spigot-1.16.4.jar nogui
-
-# java -jar BuildTools.jar
-```
-
-### Code Editing 
-
-Edit plugin via Eclipse for nice code auto completion.
-
-### Test the plugin
-
-I use a second terminal session for compiling and copying the plugin to the local server.
-
-    mvn clean package
-    cp target/PluginDemo-n.n.n.jar ~/spigotmc/plugins/
-
-Flip over to `~/spigotmc` terminal and type `reload`. Or if server not running use `run.sh` script.
-
-You can then run the Minecraft client, choose `Direct Connection`, type `localhost` for Server Address. Inside Minecraft, you can type `/plugins` and you should see yours listed.
+If you haven't create a plugin before, you'll need to setup your local development environment and understand the compile and test workflow. I've created a [Minecraft Plugin Development Guide](https://gist.github.com/briangershon/7a009cad2a1e11a7b785e8b8bf6ada1a) to cover this.
 
 ## To Release Your Plugin
 
-Make sure you first update the plugin version in `pom.xml` in `<version>1.0.1</version>`.
+Make sure you first update the plugin version in `pom.xml` in `<version>1.0.0</version>`.
 
     mvn clean package
 
