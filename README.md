@@ -15,9 +15,9 @@ Features:
 ## Steps for using this template for your own projects
 
 - [ ] Read about [Spigot plugin development](https://www.spigotmc.org/wiki/spigot-plugin-development/) (recommended).
-- [ ] Rename existing `demo` folder at `src/main/java/com/briangershon/demo` folder to be your own, then search-and-replace `com.briangershon.demo` with name of your package. `App.java` is where you'll start adding your plugin logic.
+- [ ] Rename existing `demo` folder at `src/main/java/com/briangershon/demo` to be your own, then search-and-replace `com.briangershon.demo` with name of your package. `App.java` is where you'll start adding your plugin logic.
 - [ ] Update `src/main/resources/plugin.yml` and populate with the meta data for your plugin.
-- [ ] Update `pom.xml` top section to match your plugin, specifically `<groupId>`, `<artifactId>`, and `<version>`. Plus `<dependency>` section if you're using a different Spigot version. You can find name of spigot versions at <https://hub.spigotmc.org/nexus/content/repositories/snapshots/org/spigotmc/spigot-api/>.
+- [ ] Update `pom.xml` top section to match your plugin, specifically `<groupId>`, `<artifactId>`, and `<version>`. Plus `<dependency>` section if you're using a different Spigot version. You can find list of spigot versions at <https://hub.spigotmc.org/nexus/content/repositories/snapshots/org/spigotmc/spigot-api/>.
 - [ ] Compile and install on your local server and make sure everything is working correctly. See "Releasing Plugin" below for steps.
 - [ ] Clear out this README and tailor for your specific plugin
 
